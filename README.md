@@ -1,7 +1,8 @@
 # Getting Started with Create React App
 
 ## Live Demo Open Open [https://empl-details.herokuapp.com](https://empl-details.herokuapp.com).
-
+## Username admin.
+## Password admin.
 ## Available Scripts
 
 In the project directory, you can run:
