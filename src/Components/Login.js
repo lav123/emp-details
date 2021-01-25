@@ -57,6 +57,7 @@ class Login extends React.Component {
       userCredential.password === "admin"
     ) {
       localStorage.setItem("token", "valid");
+      localStorage.setItem("empData", JSON.stringify([]));
       this.props.history.push("/home");
     } else {
       this.setState({ wrongCredential: true });

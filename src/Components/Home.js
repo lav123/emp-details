@@ -6,7 +6,7 @@ import "./Home.css";
 class Home extends React.Component {
   componentDidMount() {
     const localdata = JSON.parse(localStorage.getItem("empData"));
-    if (localdata.length === 0) {
+    if (localdata.length === 0 || localdata === null) {
       window.localStorage.setItem("empData", JSON.stringify(employeeList));
     }
   }
