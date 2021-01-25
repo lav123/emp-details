@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Redirect } from "react-router";
+import Login from "./Components/Login";
+import { BrowserRouter } from "react-router-dom";
+import Home from "./Components/Home";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const PrivateRoute = ({ component, isAuthenticated, ...rest }) => (
+  <Route
+    {...rest}
+    render={(props) =>
+      isAuthenticated ? (
+        React.createElement(component, props)
+      ) : (
+        <Redirect
+          to={{
+            pathname: "/",
+            state: { from: props.location },
+          }}
+        />
+      )
+    }
+  />
+);
+
+class App extends React.Component {
+  static defaultProps = {
+    isAuthenticated: localStorage.getItem("token") ? true : false,
+  };
+  render() {
+    return (
+      <BrowserRouter>
+        <Route path="/" exact component={Login} />
+        <PrivateRoute
+          isAuthenticated={localStorage.getItem("token") ? true : false}
+          path="/home"
+          component={Home}
+        />
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

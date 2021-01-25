@@ -1,0 +1,88 @@
+const employeeList = [
+  {
+    id: 1,
+    first_name: "Leanne",
+    last_name: "Graham",
+    email: "Sincere@april.biz",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/1.svg",
+  },
+  {
+    id: 2,
+    first_name: "Ervin",
+    last_name: "Howell",
+    email: "Shanna@melissa.tv",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/2.svg",
+  },
+  {
+    id: 3,
+    first_name: "Clementine",
+    last_name: "Bauch",
+    email: "Nathan@yesenia.net",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/3.svg",
+  },
+  {
+    id: 4,
+    first_name: "Patricia",
+    last_name: "Lebsack",
+    email: "Julianne.OConner@kory.org",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/4.svg",
+  },
+  {
+    id: 5,
+    first_name: "Chelsey",
+    last_name: "Dietrich",
+    email: "Lucio_Hettinger@annie.ca",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/5.svg",
+  },
+  {
+    id: 6,
+    first_name: "Dennis",
+    last_name: "Schulist",
+    email: "Karley_Dach@jasper.info",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/6.svg",
+  },
+  {
+    id: 7,
+    first_name: "Kurtis",
+    last_name: "Weissnat",
+    email: "Telly.Hoeger@billy.biz",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/7.svg",
+  },
+  {
+    id: 8,
+    first_name: "Nicholas",
+    last_name: "Runolfsdottir V",
+    email: "Sherwood@rosamond.me",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/8.svg",
+  },
+  {
+    id: 9,
+    first_name: "Glenna",
+    last_name: "Reichert",
+    email: "Chaim_McDermott@dana.io",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/9.svg",
+  },
+  {
+    id: 10,
+    first_name: "Clementina",
+    last_name: "DuBuque",
+    email: "Rey.Padberg@karina.biz",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/10.svg",
+  },
+  {
+    id: 11,
+    first_name: "Helen",
+    last_name: "Nguyen",
+    email: "hnguyen0@bloomberg.com",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/11.svg",
+  },
+  {
+    id: 12,
+    first_name: "Carlos",
+    last_name: "Fowler",
+    email: "cfowler1@gnu.org",
+    imageUrl: "https://avatars.dicebear.com/api/avataaars/12.svg",
+  },
+];
+
+export default employeeList;
